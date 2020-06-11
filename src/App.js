@@ -26,6 +26,7 @@ class App extends React.Component {
       this.minmax.push(element.minmax);
     }
     )
+    
     this.props.onInitialization(this.questions, this.abbreviation, this.answer, this.type, this.option, this.lable, this.minmax);
   }
   render() {
@@ -63,7 +64,7 @@ const mapDispatchToProps = (dispatch) => {
     onClickHandler: () => {
       dispatch({ type: 'CHANGE_ISMAINPAGE', payload: false })
     },
-    onInitialization: (question, abbreviation, answer, type, option, lable, minmax) => {
+    onInitialization: (question, abbreviation, answer, type, option, lable, minmax,) => {
       dispatch({ type: 'INITIAL_QUESTIONS', payload: question });
       dispatch({ type: 'INITIAL_ABBREVATION', payload: abbreviation });
       dispatch({ type: 'INITIAL_ANSWERS', payload: answer });

@@ -27,6 +27,7 @@ const reducer = (state = initialState, action) => {
       newState.answer = action.payload
       break;
     }
+   
     case 'INITIAL_ABBREVATION': {
       newState.abbreviation = action.payload
       break;
@@ -63,6 +64,7 @@ const reducer = (state = initialState, action) => {
     }
     case 'CHANGE_TEXEFIELD': {
       newState.answer[action.index].text = action.payload;
+      
       break;
     }
     case 'CHANGE_SLIDER': {
@@ -94,6 +96,10 @@ const reducer = (state = initialState, action) => {
     }
     case 'CHANGE_SELECT': {
       newState.answer[action.index].text = action.payload;
+      break;
+    }
+    case 'RESET_ANSWER': {
+      newState.answer = action.payload;
       break;
     }
     default:

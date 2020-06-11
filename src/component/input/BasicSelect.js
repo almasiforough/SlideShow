@@ -22,7 +22,7 @@ function NativeSelects(props) {
       <InputLabel >{props.lable[props.id]}</InputLabel>
       <Select
         native
-        defaultValue={""}
+        defaultValue={props.answer[props.id].text}
         inputProps={{
           name: props.lable[props.id],
           id: 'uncontrolled1-native',

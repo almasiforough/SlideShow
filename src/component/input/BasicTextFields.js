@@ -17,6 +17,7 @@ function BasicTextFields(props) {
     <form className={classes.root} noValidate autoComplete="off">
       <TextField id="standard-basic"
         onChange={(e) => props.onTextChange(e, props.id)}
+        defaultValue={props.answer[props.id].text}
       />
     </form>
   );
