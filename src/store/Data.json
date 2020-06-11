@@ -1,0 +1,70 @@
+{
+  "data": {
+    "qa": [
+      
+      {
+          "question": "Which Brand Was Your Previous Mobile?",
+          "answer": {
+            "text":""
+          },
+          "type":"select" ,
+          "abbreviation":"previous Mobile",
+          "option":["Apple","Samsung","Google","Huawei","others"],
+          "lable":"Brand"
+        },
+        {
+          "question": " Which Scrren Size Are you Interested In?",
+          "answer":{
+            "text":[
+              {
+              "selected":false,
+              "text":"4.7"
+            },
+            {
+              "selected":false,
+              "text":"5.5"
+            },
+            {
+              "selected":false,
+              "text":"5.7"
+            },
+            {
+              "selected":false,
+              "text":"6.1"
+            },
+            {
+              "selected":false,
+              "text":"6.3"
+            },
+            {
+              "selected":false,
+              "text":"6.7"
+            }
+          ]
+          },
+          "type": "checkbox",
+
+          "abbreviation":"Screen Size "
+        },
+        {
+          "question": "How much Do you Want To Pay?",
+          "answer": {
+            "text":[1000,2500]
+          },
+          "type":"slider",
+          "abbreviation":"Price",
+          "lable":"Price",
+          "minmax":[300,3000]
+        },
+        {
+          "question": " What Is Your Name?",
+          "answer":  {
+            "text":""
+          },
+          "type":"text",
+          "abbreviation":"Name"
+        }
+        
+          ]
+  }
+}
