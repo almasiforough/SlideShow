@@ -26,7 +26,7 @@ class App extends React.Component {
       this.minmax.push(element.minmax);
     }
     )
-    
+
     this.props.onInitialization(this.questions, this.abbreviation, this.answer, this.type, this.option, this.lable, this.minmax);
   }
   render() {
